@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "D:/dribble/src/Image/profilePic.png";
+import profilePic from "../../Image/profilePic.png";
 import "./ProfileImage.css";
 
 const ProfileImage = () => {
