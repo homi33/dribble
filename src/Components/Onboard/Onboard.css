@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-div {
+  width: 48rem;
+  /* background-color: rgb(153, 212, 192); */
+  height: 80%;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profileDetails {
+  display: flex;
+  align-items: center;
+}
+
+.hire-me span {
+  color: #ea4c89;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.like-btn {
+  color: white;
+  background-color: #ea4c89;
+  border: 0;
+}
+.like-btn :hover {
+  background-color: #ea4c89;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #ea4c89;
+  opacity: 0.5;
+}
+
+.profileWrapper {
+  display: flex;
+  align-items: center;
+}
+.list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.list li {
+  margin-left: 1.563rem;
+}
+
+.buttons > :last-child {
+  margin-left: 0.75rem;
+}
+
+.profileImg {
+  margin-right: 1rem;
+}
+
+.arrow {
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.moving {
+  margin-top: 0.6rem;
+  height: 80%;
+}
+
+.footer {
+  margin: 1rem auto 2rem;
+  text-align: center;
+  width: 80%;
+}
+
+.footer-p1 {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.813rem;
+  margin-top: 1rem;
+  color: #0d0c22;
+}
+
+.footer-p2 {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+  color: #3d3d4e;
+  text-align: center;
+}
+
+.indicatorWrapper {
+  bottom: -3.75rem;
+}
+
+.carousel-indicators .indicatorButton {
+  width: 4.375rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.indicatorButton :hover {
+  border: 0.063rem solid #ea4c89;
+}
+
+.navbar-toggler {
+  order: -1;
+}
+.info {
+  margin-top: 8rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hr {
+  height: 0;
+  width: calc(50% - 3.375rem);
+  border: 0.063rem solid #000;
+}
+
+.hr-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hr-line > :nth-child(2) {
+  margin: 0 1.875rem;
+}
+
+.mobileTitle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-div {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profileWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 0;
+  }
+  .profile-text h5 {
+    display: none;
+  }
+  .mobileTitle {
+    display: block;
+  }
+  .list li {
+    margin-left: 20px;
+  }
+  .buttons {
+    display: none;
+  }
+}
